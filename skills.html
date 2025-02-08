@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c85050;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Moves nav to the right */
+    align-items: center;
+    padding: 20px 50px; /* Adjusts spacing */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adjust space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #c85050;
+    border-bottom: 2px solid #c85050;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 10%;
+}
+
+.left img {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(200, 80, 80, 0.5);
+}
+
+.right {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.right h1 {
+    font-size: 50px;
+}
+
+.right h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #c85050;
+
+}
+
+    </style>
+     
+    
+    
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            justify-content: center;
+            max-width: 800px;
+            margin: auto;
+            background: #3a0d0d;
+            border-radius: 15px;
+            box-shadow: 0 0 15px red;
+        }
+        .skill-card {
+            background: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px red;
+            text-align: center;
+        }
+        .skill-card img {
+            width: 50px;
+            height: 50px;
+        }
+        .skill-card p {
+            margin-top: 10px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+            <p>Figma</p>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+            <p>Photoshop</p>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <p>Python</p>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+            <p>Angular</p>
+        </div>
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress">
+            <p>WordPress</p>
+        </div>
+    </div>
+</body>
+</html>

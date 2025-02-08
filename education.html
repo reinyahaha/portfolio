@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Timeline</title>
+    
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c85050;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Moves nav to the right */
+    align-items: center;
+    padding: 20px 50px; /* Adjusts spacing */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adjust space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #c85050;
+    border-bottom: 2px solid #c85050;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 10%;
+}
+
+.left img {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(200, 80, 80, 0.5);
+}
+
+.right {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.right h1 {
+    font-size: 50px;
+}
+
+.right h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #c85050;
+
+}
+
+    </style> 
+    
+    
+    
+    
+    
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .timeline {
+            position: relative;
+            width: 50%;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: red;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: #222;
+            border-radius: 20px;
+            box-shadow: 0 0 10px red;
+        }
+        .left {
+            left: 0;
+            transform: translateX(-50%);
+        }
+        .right {
+            left: 50%;
+            transform: translateX(50%);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 10px;
+            height: 10px;
+            background:red;
+            border-radius: 50%;
+        }
+        .left::before {
+            left: -10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Education</h1>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <h3>2021 - High School</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="timeline-item right">
+            <h3>2022 - University</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="timeline-item left">
+            <h3>2023 - Internship</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</body>
+</html>

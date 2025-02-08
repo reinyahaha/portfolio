@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c85050;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Moves nav to the right */
+    align-items: center;
+    padding: 20px 50px; /* Adjusts spacing */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adjust space between links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #c85050;
+    border-bottom: 2px solid #c85050;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 10%;
+}
+
+.left img {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(200, 80, 80, 0.5);
+}
+
+.right {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.right h1 {
+    font-size: 50px;
+}
+
+.right h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #c85050;
+
+}
+
+    </style>  
+    
+    
+    
+    
+    
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .contact-container {
+            width: 50%;
+            padding: 20px;
+            background: #222;
+            border-radius: 15px;
+            box-shadow: 0 0 15px red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid red;
+            background: transparent;
+            color: white;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        textarea {
+            height: 100px;
+        }
+        .send-btn {
+            padding: 10px 20px;
+            border: 2px solid red;
+            background: transparent;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .send-btn:hover {
+            background: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact <span style="color: red;">Me</span></h1>
+    <div class="contact-container">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="send-btn">Send Message</button>
+    </div>
+</body>
+</html>
